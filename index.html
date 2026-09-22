@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A. Ajay — QA Engineer portfolio, presented as a field inspection report. Manual and automation testing with Java, Selenium, TestNG.">
+  <title>A. Ajay | QA Engineer — Inspection Report</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-java" viewBox="0 0 24 24"><path d="M6 9h11v5a4 4 0 0 1-4 4h-3a4 4 0 0 1-4-4V9Z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M17 10h1.5a2 2 0 0 1 0 4H17" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M9 5.3c-.9.9-.9 1.3 0 2.1M12.6 5.3c-.9.9-.9 1.3 0 2.1" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/><path d="M7 20h9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="i-selenium" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.4" fill="none"/><text x="7" y="9.2" font-size="4.4" font-family="IBM Plex Mono,monospace" fill="currentColor">34</text><text x="12" y="17.5" text-anchor="middle" font-size="9.5" font-family="IBM Plex Mono,monospace" font-weight="600" fill="currentColor">Se</text></symbol>
+      <symbol id="i-testng" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M7.5 12.5l3 3 6-6.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-cucumber" viewBox="0 0 24 24"><path d="M5 13c0-5 4-9 9-9 3 0 5 2 5 5 0 6-5 10-10 10-2.5 0-4-1.5-4-4Z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M8 16 17 7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="i-maven" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M12 3v18M4 7.5l8 4.5 8-4.5" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linejoin="round"/></symbol>
+      <symbol id="i-postman" viewBox="0 0 24 24"><path d="M21 3 3 10.5l7 2.5M21 3l-8 18-3-8M21 3 10 13.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-mysql" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="2.5" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M5 6v12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5V6" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M5 12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5" stroke="currentColor" stroke-width="1.5" fill="none"/></symbol>
+      <symbol id="i-git" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="6" cy="18" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="18" cy="12" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M6 8V16M6 9c0 4 4 3 10 3" stroke="currentColor" stroke-width="1.5" fill="none"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 8 5 12l4 4M15 8l4 4-4 4M13.5 6l-3 12" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-jira" viewBox="0 0 24 24"><rect x="3.5" y="4" width="5" height="16" rx="1" stroke="currentColor" stroke-width="1.4" fill="none"/><rect x="9.5" y="4" width="5" height="10" rx="1" stroke="currentColor" stroke-width="1.4" fill="none"/><rect x="15.5" y="4" width="5" height="13" rx="1" stroke="currentColor" stroke-width="1.4" fill="none"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6 3h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4 6.2 2 2 0 0 1 6 3Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M7.5 10v6.5M7.5 7.2v.1M11 16.5V13c0-1.6 1-2.5 2.3-2.5S16 11.4 16 13v3.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></symbol>
+      <symbol id="i-cert" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="m9 12 2 2 4-4.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="m7.5 12.5 3 3 6-6.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="doc-header">
+    <div class="doc-header-inner">
+      <a class="doc-mark" href="#top"><span class="box">AJ</span><div><b>A. AJAY</b><small>QA Inspection Report</small></div></a>
+      <nav class="doc-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="doc-meta">
+        <span>REV. 2026.2</span>
+        <span class="sep"></span>
+        <span class="status"><i></i>STATUS: OPEN TO ROLES</span>
+        <span class="sep"></span>
+        <a href="resume.pdf" download>RESUME ↓</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="cover section" style="border-bottom:1px solid var(--line)">
+      <div class="cover-grid">
+        <div>
+          <div class="field-row">
+            <span>REPORT NO. <b>AJ‑QA‑2026</b></span>
+            <span>DISCIPLINE <b>SOFTWARE QUALITY</b></span>
+            <span>ISSUED <b>CHENNAI, IN</b></span>
+          </div>
+          <h1>Findings from the field:<span class="line2">most bugs are preventable.</span></h1>
+          <p class="cover-sub">QA Engineer focused on functional quality, defect discovery and test automation — working with Selenium, Java, TestNG, Cucumber, Postman and MySQL.</p>
+          <div class="cover-actions">
+            <a class="btn primary" href="#work">View test reports</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/ajayannadurai08/" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg>LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/ajayannadurai08" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>GitHub</a>
+          </div>
+          <div class="spec-table">
+            <div><strong>163+</strong><span>Test cases executed</span></div>
+            <div><strong>10</strong><span>Defects logged</span></div>
+            <div><strong>6</strong><span>Critical severity</span></div>
+          </div>
+        </div>
+
+        <div class="figure">
+          <div class="figure-frame">
+            <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+            <img src="profile.png" alt="A. Ajay">
+            <div class="stamp">VERIFIED<span>QA</span></div>
+          </div>
+          <div class="figure-cap"><span>FIG. 01 — SUBJECT PROFILE</span><span>A. AJAY</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="sec-head"><span class="sec-num">SEC. 01</span><h2>About</h2><span class="rule"></span></div>
+      <div class="about-grid">
+        <div>
+          <p>I'm A. Ajay, a QA Engineer with hands-on exposure to manual and automation testing for web applications. I work across test case design, functional and regression testing, defect life-cycle management and browser automation.</p>
+          <p>My automation toolkit includes Selenium WebDriver, Java, TestNG, Cucumber (BDD), Maven and the Page Object Model. I also work with Postman for API testing and MySQL for database validation.</p>
+          <div class="quote">"A good tester doesn't just verify what works. They ask what could break."</div>
+        </div>
+        <div class="fact-table">
+          <div class="fact-row"><b>Focus</b><span>QA — manual + automation</span></div>
+          <div class="fact-row"><b>Core stack</b><span>Java, Selenium, TestNG</span></div>
+          <div class="fact-row"><b>Status</b><span>Open to QA Engineer roles</span></div>
+          <div class="fact-row"><b>Location</b><span>Tamil Nadu, India</span></div>
+          <div class="fact-row"><b>Contact</b><span>+91 98947 74362</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="sec-head"><span class="sec-num">SEC. 02</span><h2>Skills checklist</h2><span class="rule"></span></div>
+      <p class="sec-intro">Tools verified through repeated use across manual and automated test cycles.</p>
+
+      <div class="check-head">
+        <span></span><span>Tool</span><span>Category</span><span class="level">Proficiency</span>
+      </div>
+      <div class="check-table">
+        <div class="check-row"><div class="ic"><svg><use href="#i-java"/></svg></div><div class="name">Java</div><div class="cat">Automation language</div><div class="level"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+        <div class="check-row"><div class="ic"><svg><use href="#i-selenium"/></svg></div><div class="name">Selenium WebDriver</div><div class="cat">Browser automation</div><div class="level"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+        <div class="check-row"><div class="ic"><svg><use href="#i-testng"/></svg></div><div class="name">TestNG</div><div class="cat">Test framework</div><div class="level"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+        <div class="check-row"><div class="ic"><svg><use href="#i-cucumber"/></svg></div><div class="name">Cucumber / Gherkin</div><div class="cat">BDD</div><div class="level"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+        <div class="check-row"><div class="ic"><svg><use href="#i-maven"/></svg></div><div class="name">Maven</div><div class="cat">Build &amp; dependency</div><div class="level"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+        <div class="check-row"><div class="ic"><svg><use href="#i-postman"/></svg></div><div class="name">Postman</div><div class="cat">API testing</div><div class="level"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+        <div class="check-row"><div class="ic"><svg><use href="#i-mysql"/></svg></div><div class="name">MySQL</div><div class="cat">Database validation</div><div class="level"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+        <div class="check-row"><div class="ic"><svg><use href="#i-git"/></svg></div><div class="name">Git</div><div class="cat">Version control</div><div class="level"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+        <div class="check-row"><div class="ic"><svg><use href="#i-github"/></svg></div><div class="name">GitHub</div><div class="cat">Repositories</div><div class="level"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+        <div class="check-row"><div class="ic"><svg><use href="#i-jira"/></svg></div><div class="name">JIRA</div><div class="cat">Defect tracking</div><div class="level"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+      </div>
+
+      <div class="practice-block">
+        <h3>Testing practice</h3>
+        <div class="tag-row">
+          <span>Test Case Design</span><span>Functional</span><span>Regression</span><span>Smoke</span><span>Sanity</span>
+          <span>Exploratory</span><span>Integration</span><span>System</span><span>UAT</span><span>Defect Life Cycle</span>
+          <span>Data-Driven</span><span>SDLC</span><span>STLC</span><span>Test Planning</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="sec-head"><span class="sec-num">SEC. 03</span><h2>Test case reports</h2><span class="rule"></span></div>
+
+      <article class="tcr">
+        <div class="tcr-head"><span class="tcr-id">TCR‑01 · FLIPKART, DELL INSPIRON 15 MODULE</span><span class="tcr-badge">EXECUTED</span></div>
+        <div class="tcr-body">
+          <div class="tcr-meta">Manual testing · E-commerce</div>
+          <h3>Full-flow manual test suite</h3>
+          <p>Designed and executed a broad manual test suite covering core e-commerce flows and documented defects with reproducible evidence.</p>
+          <div class="tcr-stats">
+            <div><b>163+</b><small>Test cases</small></div>
+            <div><b>10</b><small>Defects</small></div>
+            <div><b>6</b><small>Critical</small></div>
+          </div>
+          <div class="tag-row">
+            <span>Login</span><span>Search</span><span>Product</span><span>Cart</span><span>Checkout</span><span>Wishlist</span><span>Admin</span>
+          </div>
+          <div class="defect-rows">
+            <div class="defect-row"><span class="sev">CRITICAL</span><div class="desc"><strong>Cart total calculation</strong><small>Defect identified &amp; documented</small></div></div>
+            <div class="defect-row"><span class="sev">CRITICAL</span><div class="desc"><strong>Missing pincode validation</strong><small>Checkout validation issue</small></div></div>
+            <div class="defect-row"><span class="sev">CRITICAL</span><div class="desc"><strong>HTTP instead of HTTPS</strong><small>Checkout security observation</small></div></div>
+          </div>
+          <a class="tcr-link" href="https://github.com/ajayannadurai08/OpenCart-Manual-Testing" target="_blank" rel="noopener">See testing repository ↗</a>
+        </div>
+      </article>
+
+      <article class="tcr">
+        <div class="tcr-head"><span class="tcr-id">TCR‑02 · SCENT‑ARTS, CONTACT US AUTOMATION</span><span class="tcr-badge">EXECUTED</span></div>
+        <div class="tcr-body">
+          <div class="tcr-meta">Automation · BDD</div>
+          <h3>BDD scenario automation</h3>
+          <p>Created BDD scenarios and reusable step definitions to validate form fields, navigation, submission flow and error messages.</p>
+          <div class="tag-row">
+            <span>Selenium</span><span>Java</span><span>Cucumber</span><span>Gherkin</span><span>Positive</span><span>Negative</span><span>Validation</span>
+          </div>
+          <div class="term">
+            <div class="term-bar">contact-us.feature</div>
+            <pre><code>Scenario: Submit valid contact form
+  Given I open the Contact Us page
+  When I enter valid user details
+  And I click Submit
+  Then the form should be submitted
+
+Scenario: Validate required fields
+  Given the form is empty
+  When I click Submit
+  Then validation messages appear</code></pre>
+          </div>
+          <a class="tcr-link" href="https://github.com/ajayannadurai08/InternshipProject" target="_blank" rel="noopener">Open automation repository ↗</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="sec-head"><span class="sec-num">SEC. 04</span><h2>Revision history</h2><span class="rule"></span></div>
+      <div class="rev-table">
+        <div class="rev-row">
+          <div class="rev-date">MAY 2025 — MAY 2026</div>
+          <div>
+            <h3>Production Editor</h3>
+            <p class="org">TNQ Tech Pvt Ltd</p>
+            <p>Reviewed and verified content at each production stage, identified discrepancies before sign-off, and coordinated with authors, editors and cross-functional teams while meeting production timelines.</p>
+          </div>
+        </div>
+        <div class="rev-row">
+          <div class="rev-date">EDUCATION</div>
+          <div>
+            <h3>M.Sc. Mathematics</h3>
+            <p class="org">Bharathidasan University, Trichy</p>
+            <h3 style="margin-top:10px">B.Sc. Mathematics</h3>
+            <p class="org">Government Arts College (Autonomous), Kumbakonam</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">SEC. 05</span><h2>Certifications</h2><span class="rule"></span></div>
+      <div class="cert-row"><div class="cert-seal"><svg><use href="#i-cert"/></svg></div><div><h3>Software Testing</h3><p>Inmakes Infotech Pvt Ltd</p></div></div>
+      <div class="cert-row"><div class="cert-seal"><svg><use href="#i-java"/></svg></div><div><h3>Java Certification</h3><p>Cadpoint</p></div></div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">SEC. 06</span><h2>Inspection process</h2><span class="rule"></span></div>
+      <div class="flow-row">
+        <div><span class="fnum">01</span><b>Requirement</b><small>Understand the expected behaviour</small></div>
+        <div><span class="fnum">02</span><b>Scenario</b><small>Identify happy &amp; unhappy paths</small></div>
+        <div><span class="fnum">03</span><b>Test Case</b><small>Design clear, traceable coverage</small></div>
+        <div><span class="fnum">04</span><b>Execution</b><small>Capture actual results &amp; evidence</small></div>
+        <div><span class="fnum">05</span><b>Defect</b><small>Report with severity &amp; priority</small></div>
+        <div><span class="fnum">06</span><b>Regression</b><small>Verify fixes without new breakage</small></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" style="border-bottom:none">
+      <div class="sec-head"><span class="sec-num">SEC. 07</span><h2>Sign-off</h2><span class="rule"></span></div>
+      <div class="signoff">
+        <div>
+          <h2>Have a product?<span class="line2">I'll test it.</span></h2>
+          <p class="signoff-sub">Open to QA Engineer opportunities, testing projects and conversations about software quality.</p>
+          <div class="avail"><svg><use href="#i-check"/></svg>Available for QA Engineer roles</div>
+          <div class="cover-actions">
+            <a class="btn primary" href="mailto:ajayannadurai261@gmail.com"><svg><use href="#i-mail"/></svg>Email me</a>
+            <a class="btn ghost" href="tel:+919894774362"><svg><use href="#i-phone"/></svg>Call me</a>
+          </div>
+        </div>
+        <div class="card-panel">
+          <div class="field"><b>Name</b><span>A. Ajay</span></div>
+          <div class="field"><b>Phone</b><span><a href="tel:+919894774362">+91 98947 74362</a></span></div>
+          <div class="field"><b>Email</b><span><a href="mailto:ajayannadurai261@gmail.com">ajayannadurai261@gmail.com</a></span></div>
+          <div class="field"><b>LinkedIn</b><span><a href="https://www.linkedin.com/in/ajayannadurai08/" target="_blank" rel="noopener">ajayannadurai08</a></span></div>
+          <div class="field"><b>GitHub</b><span><a href="https://github.com/ajayannadurai08" target="_blank" rel="noopener">ajayannadurai08</a></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="doc-footer">
+    <span>AJ‑QA‑PORTFOLIO · REV 2026.2</span>
+    <span>© 2026 A. AJAY — BUILT FOR QUALITY</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
